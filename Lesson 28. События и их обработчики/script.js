@@ -11,7 +11,7 @@ const btn = document.querySelectorAll('button'), //тут исп-тся псев
 //     alert('Click');
 // };
 
-//при посторном имп-и ф-и применется только вторая
+//при повторном исп-и ф-и применется только вторая
 // btn.onclick = function() {
 //     alert('Second click');
 // };
@@ -72,9 +72,9 @@ const deleteElement = (e) => {
 const link = document.querySelector('a');
 
 link.addEventListener('click', (event) => {
-    event.preventDefault(); //помещается в начало
+    event.preventDefault(); //помещается в начало обработчика событий
 
-    console.log(event.taget);
+    console.log(event.target);
 });
 
 
